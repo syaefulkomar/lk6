@@ -1,10 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ActivityKetiga">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- AppBar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="TEFA SMK INDONESIA"
+        android:titleTextColor="@android:color/white"
+        app:titleCentered="true" />
+
+    <!-- Konten Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA PRODUK"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2"
+                android:background="@android:color/white"
+                android:padding="1dp">
+
+                <!-- Header -->
+                <TableRow
+                    android:background="#FFFFFF"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:text="NO"
+                        android:textStyle="bold"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:text="NAMA PRODUK"
+                        android:textStyle="bold"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:text="STOK PRODUK"
+                        android:textStyle="bold"
+                        android:padding="8dp"/>
+                </TableRow>
+
+                <!-- Baris 1 -->
+                <TableRow android:padding="4dp">
+                    <TextView android:text="1" android:padding="8dp"/>
+                    <TextView android:text="Sayur" android:padding="8dp"/>
+                    <TextView android:text="50" android:padding="8dp"/>
+                </TableRow>
+
+                <!-- Baris 2 -->
+                <TableRow android:padding="4dp">
+                    <TextView android:text="2" android:padding="8dp"/>
+                    <TextView android:text="Sparepart" android:padding="8dp"/>
+                    <TextView android:text="10" android:padding="8dp"/>
+                </TableRow>
+
+                <!-- Baris 3 -->
+                <TableRow android:padding="4dp">
+                    <TextView android:text="3" android:padding="8dp"/>
+                    <TextView android:text="Donat" android:padding="8dp"/>
+                    <TextView android:text="30" android:padding="8dp"/>
+                </TableRow>
+
+                <!-- Baris 4 -->
+                <TableRow android:padding="4dp">
+                    <TextView android:text="4" android:padding="8dp"/>
+                    <TextView android:text="Minuman" android:padding="8dp"/>
+                    <TextView android:text="50" android:padding="8dp"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
