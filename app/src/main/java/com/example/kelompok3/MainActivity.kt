@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val btnaksi = findViewById<Button>(R.id.button2)
 
         btnaksi.setOnClickListener {
-            val intent = Intent(this, ActivityKetiga::class.java)
+            val intent = Intent(this, Activity_kedua::class.java)
             startActivity(intent)
         }
 
