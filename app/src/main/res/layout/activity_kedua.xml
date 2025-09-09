@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Rumah Aneka kelompok 3"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kopi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:padding="5dp"
+            app:srcCompat="@drawable/kopi" />
+
+        <ImageView
+            android:id="@+id/daging"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:padding="5dp"
+            app:srcCompat="@drawable/daging" />
+
+        <ImageView
+            android:id="@+id/donat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:padding="5dp"
+            app:srcCompat="@drawable/donat" />
+
+        <ImageView
+            android:id="@+id/buah"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="0"
+            android:padding="5dp"
+            app:srcCompat="@drawable/apel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="5dp"
+            android:text="Kopi"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="5dp"
+            android:text="Daging Sapi"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="5dp"
+            android:text="Donat"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="5dp"
+            android:text="Apel"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="INPUT DATA USER"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:ems="10"
+            android:hint="Isi Nama Produk"
+            android:inputType="text"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/estok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enama"
+            android:ems="10"
+            android:hint="Isi Stok Produk"
+            android:inputType="text"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/estok"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT" />
+    </RelativeLayout>
+
+
+</LinearLayout>
